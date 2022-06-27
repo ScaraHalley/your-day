@@ -2,7 +2,8 @@ ul {
   list-style-type: none;
 }
 .container {
-  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .weather-app {
   max-width: 600px;
@@ -10,12 +11,18 @@ ul {
   margin: 40px auto;
   border: 1px #f2836d solid;
   border-radius: 5px;
-  background-color: #f2836d 60%;
+  background-color: #f2836d3f;
   color: #28373f;
 }
 .forcast5day {
   font-size: 12px;
   line-height: 1.5;
-  background-color: #fff 50%;
+  background-color: #f2836d5d;
   color: #3b505c;
+}
+.high {
+  font-weight: 500;
+}
+.low {
+  font-weight: 200;
 }
