@@ -1,7 +1,8 @@
 ul {
+  list-style-type: none;
 }
 .container {
-  background-color: #f2836d;
+  background-color: #fff;
 }
 .weather-app {
   max-width: 600px;
@@ -9,10 +10,12 @@ ul {
   margin: 40px auto;
   border: 1px #f2836d solid;
   border-radius: 5px;
-  background-color: #f2836d;
+  background-color: #f2836d 60%;
+  color: #28373f;
 }
 .forcast5day {
   font-size: 12px;
   line-height: 1.5;
   background-color: #fff 50%;
+  color: #3b505c;
 }
