@@ -11,14 +11,17 @@ ul {
   margin: 40px auto;
   border: 1px #f2836d solid;
   border-radius: 5px;
-  background-color: #f2836d3f;
+  background-color: #f2836d18;
   color: #28373f;
 }
 .forcast5day {
   font-size: 12px;
   line-height: 1.5;
-  background-color: #f2836d5d;
   color: #3b505c;
+}
+.card-body {
+  background-color: #f2836d7e;
+  border: 1px #f2836d solid;
 }
 .high {
   font-weight: 500;
