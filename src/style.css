@@ -14,7 +14,7 @@ footer {
   max-width: 600px;
   padding: 30px;
   margin: 40px auto;
-  border: 5px #f2836d solid;
+  border: 3px #f2836d solid;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   color: #28373f;
@@ -25,9 +25,13 @@ footer {
   color: #3b505c;
   text-align: center;
 }
-.card-body {
+.card-group {
   background-color: rgba(255, 255, 255, 0.5);
-  border: 5px #f2836d solid;
+  border: 3px #f2836d solid;
+  list-style-type: none;
+  font-size: 12px;
+  color: #3b505c;
+  font-family: "Roboto", sans-serif;
 }
 .high {
   font-weight: 500;
