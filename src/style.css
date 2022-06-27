@@ -7,35 +7,40 @@ footer {
   font-size: 10px;
   line-height: 1.5;
 }
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
 .container {
   font-family: "Roboto", sans-serif;
 }
 .weather-app {
   max-width: 600px;
-  padding: 30px;
-  margin: 40px auto;
+  padding: 20px;
+  margin: 20px auto;
   border: 3px #f2836d solid;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   color: #28373f;
 }
-.forcast5day {
-  font-size: 10px;
-  line-height: 1.5;
-  color: #3b505c;
-  text-align: center;
-}
 .card-group {
   background-color: rgba(255, 255, 255, 0.5);
   border: 3px #f2836d solid;
+  border-radius: 20px;
   list-style-type: none;
-  font-size: 12px;
+  font-size: 14px;
   color: #3b505c;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 .high {
   font-weight: 500;
 }
 .low {
   font-weight: 200;
+}
+.emoji-today {
+  font-size: 28px;
 }
