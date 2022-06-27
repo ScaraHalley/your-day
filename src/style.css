@@ -1,28 +1,31 @@
 ul {
   list-style-type: none;
 }
+footer {
+  font-size: 8px;
+  line-height: 1.5;
+}
 .container {
-  font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
 }
 .weather-app {
   max-width: 600px;
   padding: 30px;
   margin: 40px auto;
-  border: 1px #f2836d solid;
+  border: 5px #f2836d solid;
   border-radius: 20px;
-  background-color: #eacd9f;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #28373f;
 }
 .forcast5day {
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.5;
   color: #3b505c;
   text-align: center;
 }
 .card-body {
-  background-color: #f2836d7e;
-  border: 1px #f2836d solid;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px #f2836d solid;
 }
 .high {
   font-weight: 500;
