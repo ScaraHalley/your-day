@@ -1,5 +1,7 @@
+ul {
+}
 .container {
-  background-color: #f2836d 50%;
+  background-color: #f2836d;
 }
 .weather-app {
   max-width: 600px;
@@ -7,7 +9,7 @@
   margin: 40px auto;
   border: 1px #f2836d solid;
   border-radius: 5px;
-  background-color: #f2836d 80%;
+  background-color: #f2836d;
 }
 .forcast5day {
   font-size: 12px;
