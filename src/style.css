@@ -30,6 +30,8 @@ footer {
 }
 li {
   list-style-type: none;
+}
+li:first-letter {
   text-transform: capitalize;
 }
 .weather-app {
