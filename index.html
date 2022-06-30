@@ -18,28 +18,29 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
      <link rel="stylesheet" type="text/css" href="src/style.css" /> 
   </head>
   <body class="weather-app">
     <div class="container">
       <h5>Your day ahead in...</h5>
-      <h1>Brisbane</h1>
-      <h3>Monday 12:00</h3>
+      <h1 id="city">Brisbane</h1>
+      <h3 id="date">Monday 12:00</h3>
       <ul>
       </ul>
       <div class="row">
         <div class="col-6">
           <ul class="basic-forcast">
             <li class="emoji-today">🌞</li>    
-            <li class="today-temp"><h2>18<span class="units">°C | <a href=# class="fahrenheit">°F</a></span></h2></li> 
+            <li class="today-temp" ><h2><span id="temperature">18</span><span class="units">°C | <a href=# class="fahrenheit">°F</a></span></h2></li> 
           </ul>
         </div>
         <div class="col-6">
           <ul class="stats">
-            <li>Partially cloudy</li>
-           <li>Precipitation: 0%</li>
-            <li>Humidity: 70%</li>
-            <li>Wind: 3 km/h</li>
+            <li id="description"></li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>km/h</li>
           </ul>
         </div>
       </div>
@@ -105,6 +106,6 @@
 								 </div>
     </div>
      <footer>this app was coded by Sarah Halley</footer>
-      <script src="app.js"></script>
+      <script src="src/app.js"></script>
   </body>
 </html>
