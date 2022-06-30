@@ -19,11 +19,11 @@ h3 {
   font-family: "Open Sans", sans-serif;
 }
 .card-body {
-  background-color: rgb(211, 186, 154);
-  border-color: rgb(143, 101, 46);
+  background-color: rgb(75, 151, 165);
+  border-color: rgb(75, 151, 165);
   list-style-type: none;
   font-size: 14px;
-  color: #003d61;
+  color: #fff(253, 192, 253);
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
@@ -31,17 +31,14 @@ h3 {
   max-width: 600px;
   padding: 20px;
   margin: 20px auto;
-  border: 1px rgb(143, 101, 46) solid;
-  border-radius: 40px 40px 10px 10px;
-  background-color: rgba(143, 101, 46, 0.486);
+  border: 1px rgb(75, 151, 165) solid;
+
+  background-color: #fff;
   color: #003d61;
-}
-.card-group {
-  border-radius: 40px 40px 10px 10px;
 }
 .high {
   font-weight: 500;
-  color: rgb(143, 101, 46);
+  color: #fff;
 }
 .low {
   font-weight: 200;
