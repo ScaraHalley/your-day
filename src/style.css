@@ -1,7 +1,7 @@
 ul {
   list-style-type: none;
   font-size: 12px;
-  color: #3b505c;
+  color: #003d61;
 }
 footer {
   font-size: 10px;
@@ -12,34 +12,40 @@ h1,
 h2,
 h3 {
   font-weight: 400;
+  color: #003d61;
 }
 
 .container {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+.card-body {
+  background-color: rgb(211, 186, 154);
+  border-color: rgb(143, 101, 46);
+  list-style-type: none;
+  font-size: 14px;
+  color: #003d61;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 .weather-app {
   max-width: 600px;
   padding: 20px;
   margin: 20px auto;
-  border: 1px #3b505c solid;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #28373f;
+  border: 1px rgb(143, 101, 46) solid;
+  border-radius: 40px 40px 10px 10px;
+  background-color: rgba(143, 101, 46, 0.486);
+  color: #003d61;
 }
 .card-group {
-  background-color: rgba(255, 255, 255, 0.5);
-
-  list-style-type: none;
-  font-size: 14px;
-  color: #3b505c;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
+  border-radius: 40px 40px 10px 10px;
 }
 .high {
   font-weight: 500;
+  color: rgb(143, 101, 46);
 }
 .low {
   font-weight: 200;
+  color: rgb(143, 101, 46);
 }
 .emoji-today {
   font-size: 28px;
