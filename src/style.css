@@ -1,7 +1,7 @@
 h1,
 h3 {
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
   color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -9,6 +9,7 @@ h3 {
 
 h2 {
   font-weight: 600;
+  font-size: 32px;
   color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -52,6 +53,11 @@ footer {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
+.today-temp .units {
+  font-size: 14px;
+  position: relative;
+  top: -12px;
+}
 .fahrenheit {
   font-weight: 200;
 }
@@ -60,10 +66,14 @@ footer {
   border: 2px rgb(20, 80, 148) solid;
   border-radius: 3px;
   font-size: 12px;
-  font-weight: 600;
   color: #fff(253, 192, 253);
   font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+.day {
+  font-weight: 400;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 .high {
   font-weight: 600;
