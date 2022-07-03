@@ -45,7 +45,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "4996ce71fcc65dbc346e7914893b8e7f";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=${apiKey}&units=metric`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=brisbane&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);

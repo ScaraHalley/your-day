@@ -46,7 +46,6 @@ li:first-letter {
 }
 .basic-forcast {
   display: block;
-  text-align: center;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }

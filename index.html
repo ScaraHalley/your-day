@@ -24,20 +24,27 @@
   </head>
   <body class="weather-app">
     <div class="container">
+    <div class="col-9"></div>
+      <form id="search-form">
+        <input type="search"
+        placeholder="type your city..."
+        class="form-control"
+      />
+      </div>
+      <div class="col-3">
+        <input type="submit" value="Search">
+      </div>
       <h5>Your day ahead in...</h5>
-      <h1 id="city">Brisbane</h1>
+            <h1 id="city">Brisbane</h1>
       <ul>
       </ul>
       <div class="row">
         <div class="col-6">
-          <ul class="basic-forcast">
-            <li  class="clearfix weather-icon">
-              <img src="http://openweathermap.org/img/wn/10d@2x.png"
-            alt="clear"
-          class="float-left"
-          /> 
-        </li>    
-            <li><h2 id="temperature" class="today-temp"><span class="units">°C | <a href=# class="fahrenheit">°F</a></span></h2></li> 
+          <div class="basic-forcast"
+             ><img src="" alt="" id="icon"
+          class="float-left emoji-today"
+          />   
+            <h2 class="today-temp float-left" ><span id="temperature"></span><span class="units">°C | <a href=# class="fahrenheit">°F</a></span></h2> 
           </ul>
         </div>
         <div class="col-6">
