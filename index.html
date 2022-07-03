@@ -26,43 +26,59 @@
          <div class="container">
       <div class="row">
     <div class="col-9">
-      <form id="search-form" class="nb-3">
-        <input type="search"
+      <form       id="search-form" class="nb-3">
+        <input 
+        type="search"
         placeholder="type your city..."
         class="form-control"
       />
       </form>
       </div>
       <div class="col-3">
-        <input type="submit" value="Search" class="btn btn-search w-100" id="city-input" autocomplete="off">
+        <input 
+        type="submit" 
+        value="Search" 
+        class="btn btn-search w-100" 
+        id="city-input" 
+        autocomplete="off">
       </div>
       </div>
       <h5>Your day ahead in...</h5>
       <h1 id="city">Brisbane</h1>
       <ul>
-      </ul>
+      
       <div class="row">
         <div class="col-6">
-          <div class="basic-forcast"
+          <ul class="basic-forcast"
              ><img src=""            alt=""
             id="icon"
-          class="float-left emoji-today"
+          class="emoji-today"
           />   
-            <div class="today-temp float-left" ><h2><span id="temperature"></span><span class="units">°C | <a href=# class="fahrenheit">°F</a></span></h2></div> 
+            <div class="today-temp" >
+              <h2>
+                <span id="temperature">
+                  </span>
+                <span class="units">°C | 
+                  <a href=# id="fahrenheit-link" class="fahrenheit">°F
+                    </a></span>
+              </h2>
+            </div> 
           </ul>
-        </div>
+        </div> 
         <div class="col-6">
           <ul class="stats">
             <li id="description"></li>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>km/h</li>
-            <li> last updated <span id="date"></span></li>
-
+            <li>Humidity: 
+              <span id="humidity"></span>%
+              </li>
+            <li>Wind:
+              <span id="wind"></span>km/h</li>
+            <li> last updated <span id="date"></span>
+            </li>
           </ul>
         </div>
       </div>
      <h5>In the coming days...</h5>
-    </div>
              <div class="card-group" >
                <div class="card dayOneCard forcast-5day" >
               <div class="card-body">
