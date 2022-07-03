@@ -64,6 +64,7 @@ function displayFahrenheitTemperature(event) {
 }
 
 search("Brisbane");
+
 let form = document.querySelector("search-form");
 form.addEventListener("submit", handleSubmit);
 
