@@ -67,8 +67,7 @@ li:first-letter {
 }
 .card-body {
   background-color: rgb(75, 151, 165);
-  border: 2px rgb(20, 80, 148) solid;
-  border-radius: 3px;
+  border: none;
   font-size: 12px;
   color: #fff(253, 192, 253);
   font-family: "Open Sans", sans-serif;
