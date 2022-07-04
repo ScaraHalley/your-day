@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Day</title>
-           <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -20,124 +23,126 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-     <link rel="stylesheet" type="text/css" href="src/style.css" /> 
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
   </head>
   <body class="weather-app">
-         <div class="container">
+    <div class="container">
       <div class="row">
-    <div class="col-9">
-      <form       id="search-form" class="nb-3">
-        <input 
-        type="search"
-        placeholder="type your city..."
-        class="form-control"
-      />
-      </form>
-      </div>
-      <div class="col-3">
-        <input 
-        type="submit" 
-        value="Search" 
-        class="btn btn-search w-100" 
-        id="city-input" 
-        autocomplete="off">
-      </div>
+        <div class="col-9">
+          <form id="search-form" class="nb-3">
+            <input
+              type="search"
+              placeholder="type your city..."
+              class="form-control"
+            />
+          </form>
+        </div>
+        <div class="col-3">
+          <input
+            type="submit"
+            value="Search"
+            class="btn btn-search w-100"
+            id="city-input"
+            autocomplete="off"
+          />
+        </div>
       </div>
       <h5>Your day ahead in...</h5>
       <h1 id="city"></h1>
-      <ul>
-      
       <div class="row">
-        <div class="col-6">
-          <div class="basic-forcast"
-             ><img src=""            alt=""
-            id="icon"
-          class="emoji-today"
-          />   
-            <div class="today-temp" >
+        <div class="col-6 basic-forcast">
+          <ul class="clearfix">
+            <img src="" alt="" id="icon" class="float-left emoji-today" />
+            <div class="today-temp">
               <h2>
-                <span id="temperature">
-                  </span>
-                <span class="units"><a href = "#" id ="celsius-link" class ="active">°C</a> | 
-                  <a href=# id="fahrenheit-link" class="fahrenheit">°F
-                    </a></span>
-                  </h2>
-            </div> 
-          </div>
-        </div> 
+                <span id="temperature"> </span>
+                <span class="units float-left"
+                  ><a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link" class="fahrenheit"
+                    >°F
+                  </a></span
+                >
+              </h2>
+            </div>
+          </ul>
+        </div>
         <div class="col-6">
           <ul class="stats">
             <li id="description"></li>
-            <li>Humidity: 
-              <span id="humidity"></span>%
-              </li>
-            <li>Wind:
-              <span id="wind"></span>km/h</li>
-            <li> last updated <span id="date"></span>
-            </li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>km/h</li>
+            <li>last updated <span id="date"></span></li>
           </ul>
         </div>
       </div>
-     <h5>In the coming days...</h5>
-             <div class="card-group" >
-               <div class="card dayOneCard forcast-5day" >
-              <div class="card-body">
-                <p class="dayOne ">
-                  <span class="day"> Friday </span>
-                  <br />
-                  <i class="dayOneEmoji forcast-emoji"></i>
-                  <br />
-                  <span class="dayOneHigh high">22°C</span> | <span class="dayOneLow low">15°C</span> 
-                </p>
-              </div>
-            </div>
-            <div class="card dayTwoCard forcast-5day" >
-              <div class="card-body">
-                <p class="dayTwo ">
-                  <span class="day"> Saturday </span>
-                  <br />
-                  <i class="dayTwoEmoji forcast-emoji"></i>
-                  <br />
-                  <span class="dayTwoHigh high">20°C</span> | <span class="dayTwoLow low">14°C</span> 
-                </p>
-              </div>
-            </div>
-            <div class="card dayThreeCard forcast-5day" >
-              <div class="card-body">
-                <p class="dayThree ">
-                  <span class="day"> Sunday </span>
-                  <br />
-                  <i class="dayThreeEmoji forcast-emoji"></i>
-                  <br />
-                  <span class="dayThreeHigh high">21°C</span> | <span class="dayThreeLow low">16°C</span> 
-                </p>
-              </div>
-            </div>
-            <div class="card dayFourCard forcast-5day" >
-              <div class="card-body">
-                <p class="dayFour">
-                  <span class="day"> Monday </span>
-                  <br />
-                  <i class="dayFourEmoji forcast-emoji"></i>
-                  <br />
-                  <span class="dayFourHigh high">18°C</span> | <span class="dayFourLow low">11°C</span> 
-                </p>
-              </div>
-            </div>
-                     <div class="card dayFiveCard forcast-5day" >
-              <div class="card-body">
-                <p class="dayFive ">
-                  <span class="day"> Tuesday </span>
-                  <br />
-                  <i class="dayFiveEmoji forcast-emoji"></i>
-                  <br />
-                  <span class="dayFiveHigh high">21°C</span> | <span class="dayFiveLow low">18°C</span> 
-                </p>
-                </div>
-              </div>
-            </div>
-            <footer>this app was coded by Sarah Halley</footer>
-								 </div>
-      <script src="src/app.js"></script>
+      <h5>In the coming days...</h5>
+      <div class="card-group">
+        <div class="card dayOneCard forcast-5day">
+          <div class="card-body">
+            <p class="dayOne">
+              <span class="day"> Friday </span>
+              <br />
+              <i class="dayOneEmoji forcast-emoji"></i>
+              <br />
+              <span class="dayOneHigh high">22°C</span> |
+              <span class="dayOneLow low">15°C</span>
+            </p>
+          </div>
+        </div>
+        <div class="card dayTwoCard forcast-5day">
+          <div class="card-body">
+            <p class="dayTwo">
+              <span class="day"> Saturday </span>
+              <br />
+              <i class="dayTwoEmoji forcast-emoji"></i>
+              <br />
+              <span class="dayTwoHigh high">20°C</span> |
+              <span class="dayTwoLow low">14°C</span>
+            </p>
+          </div>
+        </div>
+        <div class="card dayThreeCard forcast-5day">
+          <div class="card-body">
+            <p class="dayThree">
+              <span class="day"> Sunday </span>
+              <br />
+              <i class="dayThreeEmoji forcast-emoji"></i>
+              <br />
+              <span class="dayThreeHigh high">21°C</span> |
+              <span class="dayThreeLow low">16°C</span>
+            </p>
+          </div>
+        </div>
+        <div class="card dayFourCard forcast-5day">
+          <div class="card-body">
+            <p class="dayFour">
+              <span class="day"> Monday </span>
+              <br />
+              <i class="dayFourEmoji forcast-emoji"></i>
+              <br />
+              <span class="dayFourHigh high">18°C</span> |
+              <span class="dayFourLow low">11°C</span>
+            </p>
+          </div>
+        </div>
+        <div class="card dayFiveCard forcast-5day">
+          <div class="card-body">
+            <p class="dayFive">
+              <span class="day"> Tuesday </span>
+              <br />
+              <i class="dayFiveEmoji forcast-emoji"></i>
+              <br />
+              <span class="dayFiveHigh high">21°C</span> |
+              <span class="dayFiveLow low">18°C</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="https://github.com/ScaraHalley/your-day">Open-source code</a>
+        by Sarah Halley
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
