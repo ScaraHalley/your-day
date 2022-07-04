@@ -2,7 +2,7 @@ h1,
 h3 {
   text-align: center;
   font-weight: 800;
-  color: rgb(20, 80, 148);
+  color: #ec6e4c;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
@@ -10,7 +10,7 @@ h3 {
 strong {
   font-weight: 800;
   font-size: 32px;
-  color: rgb(20, 80, 148);
+  color: #ec6e4c;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
@@ -44,7 +44,7 @@ li:first-letter {
   color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
 }
-.today-forcast {
+.today-forecast {
   display: block;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -64,37 +64,36 @@ li:first-letter {
 .fahrenheit {
   font-weight: 200;
 }
-.card-body {
-  background-color: rgb(75, 151, 165);
-  border: none;
-  font-size: 12px;
-  color: #fff(253, 192, 253);
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-}
 .day {
   font-weight: 400;
-  color: #fff;
+  color: rgb(95, 95, 95);
   font-family: "Open Sans", sans-serif;
 }
 .high {
   font-weight: 600;
-  color: #fff;
+  color: rgb(95, 95, 95);
   font-family: "Open Sans", sans-serif;
 }
 .low {
   font-weight: 200;
-  color: #fff;
+  color: rgb(95, 95, 95);
   font-family: "Open Sans", sans-serif;
 }
 .today-icon {
   font-size: 28px;
 }
 .today-temp .active {
-  color: rgb(20, 80, 148);
+  color: rgb(75, 151, 165);
   cursor: default;
   text-decoration: none;
 }
 .today-temp .active:hover {
   text-decoration: none;
+}
+.weather-forecast {
+  background-color: rgba(86, 198, 218, 0.575);
+  border: none;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
