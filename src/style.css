@@ -90,3 +90,11 @@ li:first-letter {
 .emoji-today {
   font-size: 28px;
 }
+.today-temp .active {
+  color: rgb(20, 80, 148);
+  cursor: default;
+  text-decoration: none;
+}
+.today-temp .active:hover {
+  text-decoration: none;
+}
