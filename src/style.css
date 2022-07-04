@@ -7,8 +7,8 @@ h3 {
   line-height: 1.5;
 }
 
-h2 {
-  font-weight: 600;
+strong {
+  font-weight: 800;
   font-size: 32px;
   color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
@@ -44,7 +44,7 @@ li:first-letter {
   color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
 }
-.basic-forcast {
+.today-forcast {
   display: block;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -87,7 +87,7 @@ li:first-letter {
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
-.emoji-today {
+.today-icon {
   font-size: 28px;
 }
 .today-temp .active {

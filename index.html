@@ -45,21 +45,19 @@
       <h5>Your day ahead in...</h5>
       <h1 id="city"></h1>
       <div class="row">
-        <div class="col-6 basic-forcast">
-          <ul class="clearfix">
-            <img src="" alt="" id="icon" class="float-left emoji-today" />
+        <div class="col-6">
+          <div class="clearfix today-forcast">
+            <img src="" alt="" id="icon" class="float-left today-icon" />
             <div class="today-temp">
-              <h2>
-                <span id="temperature"> </span>
-                <span class="units float-left"
-                  ><a href="#" id="celsius-link" class="active">°C</a> |
-                  <a href="#" id="fahrenheit-link" class="fahrenheit"
-                    >°F
-                  </a></span
-                >
-              </h2>
+              <strong id="temperature"> </strong>
+              <span class="units float-left"
+                ><a href="#" id="celsius-link" class="active celsius">°C</a> |
+                <a href="#" id="fahrenheit-link" class="fahrenheit"
+                  >°F
+                </a></span
+              >
             </div>
-          </ul>
+          </div>
         </div>
         <div class="col-6">
           <ul class="stats">
@@ -137,7 +135,7 @@
         <a href="https://github.com/ScaraHalley/your-day">Open-source code</a>
         by Sarah Halley
       </footer>
+      <script src="src/app.js"></script>
     </div>
-    <script src="src/app.js"></script>
   </body>
 </html>
