@@ -61,9 +61,6 @@ li:first-letter {
   position: relative;
   top: -12px;
 }
-.fahrenheit {
-  font-weight: 200;
-}
 .day {
   font-weight: 400;
   color: rgb(95, 95, 95);
@@ -93,7 +90,10 @@ li:first-letter {
 .weather-forecast {
   background-color: rgba(86, 198, 218, 0.575);
   border: none;
-  font-size: 12px;
+  font-size: 11px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+.weather-forecast-high {
+  font-weight: 700;
 }
