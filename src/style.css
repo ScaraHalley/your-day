@@ -9,7 +9,7 @@ h3 {
 
 strong {
   font-weight: 800;
-  font-size: 32px;
+  font-size: 34px;
   color: #ec6e4c;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -35,14 +35,19 @@ li:first-letter {
   text-transform: capitalize;
 }
 .weather-app {
-  max-width: 600px;
-  padding: 20px;
-  margin: 20px auto;
-  border: 2px rgb(75, 151, 165) solid;
+  max-width: 700px;
+  padding: 25px;
+  margin: 60px auto;
+  border: 2px rgba(86, 198, 218, 0.5) solid;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: rgba(86, 198, 218, 0.05);
   color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
+}
+
+.today {
+  margin-left: 40px;
+  margin-right: 20px;
 }
 .today-forecast {
   display: block;
@@ -50,7 +55,8 @@ li:first-letter {
   line-height: 1.5;
 }
 .stats {
-  font-size: 12px;
+  padding: 10px;
+  font-size: 14px;
   color: rgb(20, 80, 148);
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
@@ -68,33 +74,36 @@ li:first-letter {
 }
 .high {
   font-weight: 600;
-  color: rgb(95, 95, 95);
+  color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
 }
 .low {
   font-weight: 200;
-  color: rgb(95, 95, 95);
+  color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
 }
 .today-icon {
-  font-size: 28px;
-}
-.today-temp .active:hover {
-  text-decoration: none;
+  font-size: 32px;
 }
 .weather-forecast {
   display: block;
-  background-color: rgba(86, 198, 218, 0.575);
+  background-color: rgba(86, 198, 218, 0.5);
   border: none;
   font-size: 11px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   justify-items: center;
   border-radius: 50px;
+  line-height: 1.5;
 }
+
 .weather-forecast .row {
   display: inline-flex;
 }
 .weather-forecast-high {
   font-weight: 700;
+}
+.link {
+  text-decoration: none;
+  color: #ec6e4c;
 }

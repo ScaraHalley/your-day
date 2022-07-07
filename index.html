@@ -27,24 +27,26 @@
   </head>
   <body class="weather-app">
     <div class="container">
-      <form id="search-form" class="mb-2">
-        <div class="row">
-          <div class="col-9">
-            <input
-              type="search"
-              placeholder="type your city..."
-              autocomplete="off"
-              id="city-input"
-            />
+      <header>
+        <form id="search-form" class="search-form mb-2">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="type your city..."
+                autocomplete="off"
+                id="city-input"
+              />
+            </div>
+            <div class="col">
+              <input type="submit" value="search" class="btn btn-light w-80" />
+            </div>
           </div>
-          <div class="col">
-            <input type="submit" value="search" class="btn btn-light w-80" />
-          </div>
-        </div>
-      </form>
+        </form>
+      </header>
       <h5>Your day ahead in...</h5>
       <h1 id="city"></h1>
-      <div class="row">
+      <div class="row today">
         <div class="col-6">
           <div class="d-flex align-items-center today-forcast">
             <img src="" alt="" id="icon" class="float-left today-icon" />
@@ -75,7 +77,9 @@
         </div>
       </div>
       <footer>
-        <a href="https://github.com/ScaraHalley/your-day">Open-source code</a>
+        <a class="link" href="https://github.com/ScaraHalley/your-day"
+          >Open-source code</a
+        >
         by Sarah Halley
       </footer>
       <script src="src/app.js"></script>
