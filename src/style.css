@@ -56,7 +56,7 @@ li:first-letter {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
-.today-temp .units {
+.today-temp .unit {
   font-size: 14px;
   position: relative;
   top: -12px;
@@ -79,20 +79,21 @@ li:first-letter {
 .today-icon {
   font-size: 28px;
 }
-.today-temp .active {
-  color: rgb(75, 151, 165);
-  cursor: default;
-  text-decoration: none;
-}
 .today-temp .active:hover {
   text-decoration: none;
 }
 .weather-forecast {
+  display: block;
   background-color: rgba(86, 198, 218, 0.575);
   border: none;
   font-size: 11px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  justify-items: center;
+  border-radius: 50px;
+}
+.weather-forecast .row {
+  display: inline-flex;
 }
 .weather-forecast-high {
   font-weight: 700;
