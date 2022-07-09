@@ -40,7 +40,7 @@ li:first-letter {
   margin: 60px auto;
   border: 2px rgba(86, 198, 218, 0.5) solid;
   border-radius: 3px;
-  background-color: rgba(86, 198, 218, 0.05);
+  background-color: #fff);
   color: rgb(20, 80, 148);
   font-family: "Open Sans", sans-serif;
 }
